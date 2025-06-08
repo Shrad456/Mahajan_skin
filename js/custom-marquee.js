@@ -90,3 +90,23 @@ $(document).ready(function(){
     }
   });
 });
+
+
+const icon = document.getElementById('whatsapp-icon');
+
+let offsetX, offsetY;
+
+icon.addEventListener('dragstart', (e) => {
+  offsetX = e.offsetX;
+  offsetY = e.offsetY;
+});
+
+document.addEventListener('dragover', (e) => {
+  e.preventDefault();
+});
+
+document.addEventListener('drop', (e) => {
+  e.preventDefault();
+  icon.style.left = `${e.clientX - offsetX}px`;
+  icon.style.top = `${e.clientY - offsetY}px`;
+});
