@@ -17452,39 +17452,11 @@ form button:hover {
     width: 100%;
 
 }   
-
-.btn-slide-right {
-  position: relative;
-  display: inline-block;
-  padding: 12px 24px;
-  color: #fff;
-  background-color: #3498db;
-  border: 2px solid #3498db;
-  text-decoration: none;
-  overflow: hidden;
-  transition: color 0.4s ease-in-out;
+a.btn-main {
+  background: linear-gradient(to right, #f0c1af 50%, #b38673 50%) right;
+  background-size: 200% 100%;
+  transition: background-position 0.9s ease-in-out;
 }
-
-.btn-slide-right::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background: #2980b9;
-  z-index: 0;
-  transition: width 0.4s ease-in-out;
-}
-
-.btn-slide-right:hover::before {
-  width: 100%;
-}
-
-.btn-slide-right:hover {
-  color: #fff;
-}
-
-.btn-slide-right::before {
-  z-index: -1;
+a.btn-main:hover {
+  background-position: left;
 }
