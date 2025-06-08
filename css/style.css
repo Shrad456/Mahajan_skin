@@ -3482,6 +3482,15 @@ a.btn-main.btn-white {
   display: none;
 } */
 
+i.icofont-arrow-right {
+  background: #fff;
+  color: #b38673;
+  border-radius: 100%;
+  font-size: 25px;
+  position: relative;
+  top: 4px;
+}
+
 .col-right a.btn-main {
   font-size: 14px;
   text-transform: none;
