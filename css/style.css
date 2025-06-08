@@ -1517,7 +1517,10 @@ header.header-mobile.header-center #logo-center{
 section {
   padding: 100px 0 100px 0;
 }
-
+section.about_docmahajan {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 #content.zebra section:nth-child(even) {
   background: #fcfcfc;
 }
@@ -17453,7 +17456,7 @@ form button:hover {
 
 }   
 a.btn-main {
-  background: linear-gradient(to right, #f0c1af 50%, #b38673 50%) right;
+  background: linear-gradient(to right, #755441 50%, #b38673 50%) right;
   background-size: 200% 100%;
   transition: background-position 0.9s ease-in-out;
 }
