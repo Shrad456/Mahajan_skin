@@ -827,7 +827,7 @@ header.smaller #mainmenu>li::before{
   font-size: 8px;
   position: relative;
   top: -2px;
-  color:rgba(255, 255, 255, .75);
+  color:#b38673;
 }
 
 .rtl #mainmenu li.has-child:after {
@@ -858,7 +858,7 @@ header.smaller #mainmenu>li::before{
   padding-top: 25px;
   padding-bottom: 25px;
   text-decoration: none;
-  color: #ffffff;
+  /* color: #ffffff; */
   text-align: center;
   outline: none;
 }
@@ -1939,7 +1939,7 @@ header.smaller.scroll-light #topbar a {
   text-align: center;
   display: inline-block;
   font-weight: 600;
-  color: #ffffff;
+  color: #b38673;
   font-family: var(--title-font);
   font-size: 16px;
   margin-right: 20px;
@@ -2111,79 +2111,7 @@ header.header-light .h-phone span{
   float: right;
 }
 
-.blog-list .btn-more:hover {
-  background: #fff;
-}
 
-.de_light .blog-list .btn-more:hover {
-  background: #222;
-  color: #fff;
-}
-
-.blog-list .post-text {
-  padding-left: 80px;
-}
-
-.bloglist .post-text a.btn-main {
-  display: inline-block;
-  margin-top: 0px;
-  padding: 5px 25px;
-}
-
-.blog-list .blog-slider {
-  margin-bottom: -60px;
-}
-
-.blog-list .date-box {
-  position: absolute;
-  text-align: center;
-  text-shadow: none;
-}
-
-.blog-list .date-box .day,
-.blog-list .date-box .month {
-  display: block;
-  color: #fff;
-  text-align: center;
-  width: 40px;
-  z-index: 100;
-}
-
-.de_light .blog-list .date-box .month {
-  color: #222222;
-}
-
-.blog-list .date-box {
-  text-align: center;
-  background: #f6f6f6;
-  padding: 10px;
-}
-
-.blog-list .date-box .month {
-  font-size: 14px;
-}
-
-.blog-list .date-box .day {
-  font-family: var(--body-font);
-  color: #222222;
-  font-weight: bold;
-  font-size: 28px;
-}
-
-.blog-list .date-box .month {
-  font-family: var(--body-font);
-  color: #fff;
-  font-size: 13px;
-  letter-spacing: 3px;
-}
-
-.de_light .blog-list .date-box .month {
-  border-bottom-color: #ddd;
-}
-
-.de_light .text-light .blog-list .date-box .month {
-  color: #fff;
-}
 
 
 .dark-scheme .comment-info .c_name {
@@ -17524,3 +17452,39 @@ form button:hover {
     width: 100%;
 
 }   
+
+.btn-slide-right {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  color: #fff;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+.btn-slide-right::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #2980b9;
+  z-index: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.btn-slide-right:hover::before {
+  width: 100%;
+}
+
+.btn-slide-right:hover {
+  color: #fff;
+}
+
+.btn-slide-right::before {
+  z-index: -1;
+}
