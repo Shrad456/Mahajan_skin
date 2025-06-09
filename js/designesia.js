@@ -341,7 +341,7 @@
             dots:true,
          });
          jQuery(".owl-3-cols").owlCarousel({
-            
+            items:4,
             center:true,
             loop:true,
             margin:5,

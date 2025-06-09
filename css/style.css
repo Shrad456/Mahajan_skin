@@ -136,7 +136,7 @@ body {
   padding: 0;
   line-height: 29px;
   word-spacing: 0px;
-  cursor:none;
+
   
 
 }
@@ -17395,7 +17395,7 @@ form select:focus {
     border-radius: 50%;
     background: transparent;
     pointer-events: none;
-    z-index: 111;
+    z-index:999;
     border: 5px solid #b38673;
     transition: all 0.2s ease-out;
     animation: moveCursor1 .5s infinite alternate;
@@ -17563,51 +17563,12 @@ a.btn-main:hover, button.btn-main:hover {
   font-size: 14px;
   line-height: 22px;
   padding: 0.8rem !important;
-  height:320px;
+  height:350px;
   }
   
   .owl-4-cols .item:hover, .owl-3-cols .item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-  }
-  
-  .cursor {
-    position: fixed;
-    width: 120px;
-    height:120px;
-    margin-left: -20px;
-    margin-top: -20px;
-    border-radius: 50%;
-    border: 2px solid #800000;
-    transition: 0.3s;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    z-index: 1000;
-  }
-  .cursor2 {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    margin-left: -20px;
-    margin-top: -20px;
-    border-radius: 50%;
-    background-color: #b38673;
-    transform: translate(-50%, -50%);
-    transition: 0.1s;
-    pointer-events: none;
-    z-index: 1000;
-  }
-  
-  .grow,
-  .grow-small {
-    transform: scale(4);
-    background: #fff;
-    mix-blend-mode: difference;
-    border: none;
-  }
-  
-  .grow-small {
-    transform: scale(6);
   }
   
