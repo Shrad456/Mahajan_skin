@@ -335,7 +335,26 @@
             nav:false,
             dots:true,
          });
-
+         jQuery(".owl-3-cols").owlCarousel({
+            rtl: true,  
+            center:true,
+            loop:true,
+            margin:5,
+            autoplay:true,
+            nav:true,
+            dots:true,
+            responsive:{
+                1000:{
+                    items:5
+                },
+                600:{
+                    items:2
+                },
+                0:{
+                    items:1
+                }
+            }
+         });
          var owl = $('#item-carousel-big');
          owl.owlCarousel();
          $('.d-carousel .d-arrow-right').on("click", function() {

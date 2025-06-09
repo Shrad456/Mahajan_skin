@@ -17205,6 +17205,7 @@ header.smaller.scroll-light .header_top
 	align-items: center;
 	width: 0;
 	height: 0;
+  z-index:9;
 	padding: 25px;
 	text-decoration: none;
 	border-radius: 50%;
@@ -17558,9 +17559,9 @@ a.btn-main:hover {
 
 
 
-  
-
-.owl-4-cols .item {
+.owl-3-cols h5{text-align:left;}
+.owl-4-cols{margin-top:2rem;}
+.owl-4-cols .item,  .owl-3-cols .item{
   background: #4DC7A0;
   margin: 7px;
   text-align: left;
@@ -17569,9 +17570,10 @@ a.btn-main:hover {
   font-size: 14px;
   line-height: 22px;
   padding: 0.8rem !important;
+  height:320px;
   }
   
-  .owl-4-cols .item:hover {
+  .owl-4-cols .item:hover, .owl-3-cols .item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
