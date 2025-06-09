@@ -130,12 +130,15 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: var(--body-font-size)
+  font-size: var(--body-font-size);
   font-weight: 400;
   color: var(--body-font-color);
   padding: 0;
   line-height: 29px;
   word-spacing: 0px;
+  cursor:none;
+  
+
 }
 
 .dark-scheme {
@@ -4030,7 +4033,8 @@ h6,
 .h5,
 .h6,
 footer.footer-light h5 {
-  margin-top: 0;
+   
+    margin-top: 0;
   font-family: var(--title-font);
   font-weight: var(--title-font-weight);
   color: var(--title-font-color);
@@ -17577,5 +17581,44 @@ a.btn-main:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+  }
+  
+  .cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #800000;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+  }
+  .cursor2 {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .grow,
+  .grow-small {
+    transform: scale(4);
+    background: white;
+    mix-blend-mode: difference;
+    border: none;
+  }
+  
+  .grow-small {
+    transform: scale(2);
   }
   
