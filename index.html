@@ -20,16 +20,20 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css" >
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>
     <div class="cursor"></div>
     <div id="wrapper">
         <div class="float-text show-on-scroll">
-            <span><a href="#">Scroll to top</a></span>
+            <div class="progress-wrap" id="progress-scroll">
+                <svg class="progress-circle svg-content" width="100%"       height="100%" viewBox="-1 -1 102 102">
+                      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+              </div>
         </div>
-        <div class="scrollbar-v show-on-scroll"></div>
+        <!-- <div class="scrollbar-v show-on-scroll"></div> -->
         
         <!-- page preloader begin -->
         <div id="de-loader"></div>
@@ -134,14 +138,22 @@
         <label for="name">Name</label>
         <input type="text" id="name" required />
   
-        <label for="email">Email</label>
-        <input type="email" id="email" required />
+        <label for="phonenumber">Phone Number</label>
+        <input type="number" id="number" required />
   
         <label for="date">Preferred Date</label>
         <input type="date" id="date" required />
   
-        <label for="message">Message</label>
-        <textarea id="message" rows="4"></textarea>
+        <label for="slot">Select a time slot:</label>
+        <select id="slot" name="slot">
+          <option value="">-- Select Slot --</option>
+          <option value="09:00">09:00 AM – 09:30 AM</option>
+          <option value="10:00">10:00 AM – 10:30 AM</option>
+          <option value="11:00">11:00 AM – 11:30 AM</option>
+          <option value="12:00">12:00 PM – 12:30 PM</option>
+          <option value="14:00">02:00 PM – 02:30 PM</option>
+          <option value="15:00">03:00 PM – 03:30 PM</option>
+        </select>
   
        
         <button class="btn-main d-xl-block" type="submit">Book Appointment <i class="icofont-arrow-right"></i></button>
@@ -378,7 +390,7 @@
                             <div class="owl-4-cols owl-carousel owl-theme wow fadeInUp">
                                 <div class="item p-2 fs-18 p-5 bg-white rounded-10px">
                                     <i class="icofont-quote-left id-color fs-32 mb-4"></i>
-                                    <p>"I am thrilled with the results I achieved at the skin and hair removal clinic! The staff was incredibly knowledgeable and made me feel comfortable throughout the entire process.
+                                    <p>"I am thrilled with the results I achieved at the skin and hair removal clinic! The staff was incredibly knowledgeable and made me feel comfortable.
                                     </p>
                                     
                                     <div class="de-rating-ext mb-3 text-start">
@@ -387,7 +399,7 @@
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
                                         </span>
                                     </div>
                                     <div class="de-flex align-items-center justify-content-start">
@@ -403,7 +415,7 @@
                                                                 
                                 <div class="item p-2 fs-18 p-5 bg-white rounded-10px">
                                     <i class="icofont-quote-left id-color fs-32 mb-4"></i>
-                                    <p>"I had struggled with various skin issues for years until I discovered this amazing clinic. The team of experts carefully assessed my concerns and created a personalized treatment plan for me.
+                                    <p>"I had struggled with various skin issues for years until I discovered this amazing clinic. The team of experts carefully assessed my concerns and created a personalized treatment plan.
                                     </p>
 
                                     <div class="de-rating-ext mb-3 text-start">
@@ -412,7 +424,7 @@
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-empty"></i>
                                         </span>
                                     </div>
                                     <div class="de-flex align-items-center justify-content-start">

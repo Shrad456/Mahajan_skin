@@ -1,6 +1,4 @@
- /* --------------------------------------------------
-  * © Copyright 2024 - Mindthera by Designesia
-  * --------------------------------------------------*/
+
 (function($) {
 	'use strict';
 
@@ -301,15 +299,21 @@
             }
          });
 
+         var $owl = $('.owl-carousel');
+		
+         $owl.children().each( function( index ) {
+           $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+         });
          jQuery(".owl-4-cols").owlCarousel({
             center:true,
             loop:true,
-            margin:30,
-            nav:false,
+            margin:5,
+            autoplay:true,
+            nav:true,
             dots:true,
             responsive:{
                 1000:{
-                    items:4
+                    items:5
                 },
                 600:{
                     items:2
@@ -319,6 +323,11 @@
                 }
             }
          });
+         $(document).on('click', '.owl-item>a', function() {
+            $owl.trigger('to.owl.carousel', $(this).data( 'position' ) 
+            );
+            
+        });
 
          jQuery(".owl-single-dots").owlCarousel({
             loop:true,
@@ -520,7 +529,7 @@
 				}
 			}
          });
-		 
+         
          // Custom Navigation owlCarousel
          $(".next").on("click", function() {
              $(this).parent().parent().find('.blog-slide').trigger('owl.next');
