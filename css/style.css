@@ -17307,8 +17307,8 @@ form {
 
 form input,
 form textarea,
-form select,
-form button {
+form select
+ {
   padding: 3px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -17324,18 +17324,7 @@ form select:focus {
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
 }
 
-form button {
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease;
-}
 
-form button:hover {
-  background-color: #0056b3;
-}
 
 .modal-content {
   background: white;
@@ -17469,12 +17458,12 @@ form button:hover {
     width: 100%;
 
 }   
-a.btn-main {
+a.btn-main, button.btn-main {
   background: linear-gradient(to right, #755441 50%, #b38673 50%) right;
   background-size: 200% 100%;
   transition: background-position 0.9s ease-in-out;
 }
-a.btn-main:hover {
+a.btn-main:hover, button.btn-main:hover {
   background-position: left;
 }
 
@@ -17563,7 +17552,7 @@ a.btn-main:hover {
 
 
 
-.owl-3-cols h5{text-align:left;}
+.owl-4-cols h5{text-align:left;}
 .owl-4-cols{margin-top:2rem;}
 .owl-4-cols .item,  .owl-3-cols .item{
   background: #4DC7A0;
@@ -17585,8 +17574,8 @@ a.btn-main:hover {
   
   .cursor {
     position: fixed;
-    width: 40px;
-    height: 40px;
+    width: 120px;
+    height:120px;
     margin-left: -20px;
     margin-top: -20px;
     border-radius: 50%;
@@ -17598,12 +17587,12 @@ a.btn-main:hover {
   }
   .cursor2 {
     position: fixed;
-    width: 4px;
-    height: 4px;
+    width: 10px;
+    height: 10px;
     margin-left: -20px;
     margin-top: -20px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #b38673;
     transform: translate(-50%, -50%);
     transition: 0.1s;
     pointer-events: none;
@@ -17613,12 +17602,12 @@ a.btn-main:hover {
   .grow,
   .grow-small {
     transform: scale(4);
-    background: white;
+    background: #fff;
     mix-blend-mode: difference;
     border: none;
   }
   
   .grow-small {
-    transform: scale(2);
+    transform: scale(6);
   }
   

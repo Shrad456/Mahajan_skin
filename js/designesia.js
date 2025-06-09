@@ -305,6 +305,7 @@
            $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
          });
          jQuery(".owl-4-cols").owlCarousel({
+            rtl: true, 
             center:true,
             loop:true,
             margin:5,
@@ -336,7 +337,7 @@
             dots:true,
          });
          jQuery(".owl-3-cols").owlCarousel({
-            rtl: true,  
+            
             center:true,
             loop:true,
             margin:5,
