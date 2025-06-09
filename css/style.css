@@ -4082,12 +4082,13 @@ footer h6 {
   color: #fff;
 }
 
-h1,
-.h1 {
-  font-size: 64px;
+h1, .h1 {
+  text-transform: capitalize;
+  font-size: 52px;
   margin-bottom: 20px;
   line-height: 1.1em;
   letter-spacing: -3px;
+  font-weight: bold;
 }
 
 h1 .label {
@@ -4100,13 +4101,10 @@ h1 .label {
   -webkit-border-radius: 3px;
 }
 
-h1 span {
+h1 span{
   display: inline-block;
-  font-size: 26px;
-  line-height: 3rem;
-  letter-spacing: 0.1px;
-  font-weight: 900;
 }
+
 .text-line{
    color: transparent !important;
   -webkit-text-stroke: 1px #ffffff;
